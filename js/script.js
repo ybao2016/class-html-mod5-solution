@@ -94,25 +94,25 @@ $ajaxUtils.sendGetRequest(
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
   //debug 1
-  console.log("Nick debug 1");
-  console.log(categories); 
+  // console.log("Nick debug 1");
+  // console.log(categories); 
 
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-      console.log("Nick debug 2");
-      console.log(homeHtml); 
+      // console.log("Nick debug 2");
+      // console.log(homeHtml); 
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
-      console.log("Nick debug 3");
-      console.log(chosenCategoryShortName); 
+      // console.log("Nick debug 3");
+      // console.log(chosenCategoryShortName); 
       var sn= "\'" + chosenCategoryShortName + "\'"; 
-      console.log("Nick debug 4");
-      console.log(sn) ;
+      // console.log("Nick debug 4");
+      // console.log(sn) ;
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -127,8 +127,8 @@ function buildAndShowHomeHTML (categories) {
       // 
       // var homeHtmlToInsertIntoMainPage = ....
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", sn);
-      console.log("Nick debug 5");
-      console.log(homeHtmlToInsertIntoMainPage);
+      // console.log("Nick debug 5");
+      // console.log(homeHtmlToInsertIntoMainPage);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
