@@ -110,7 +110,7 @@ function buildAndShowHomeHTML (categories) {
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
       console.log("Nick debug 3");
       console.log(chosenCategoryShortName); 
-      var sn= "\"" + chosenCategoryShortName + "\""; 
+      var sn= "\'" + chosenCategoryShortName + "\'"; 
       console.log("Nick debug 4");
       console.log(sn) ;
 
